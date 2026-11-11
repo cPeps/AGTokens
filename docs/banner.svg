@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b14"/>
+      <stop offset="0.55" stop-color="#1e1035"/>
+      <stop offset="1" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.3" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="22" fill="url(#glow)"/>
+  <g opacity="0.18" stroke="#a78bfa" stroke-width="1">
+    <path d="M0 240 H1200 M0 200 H1200 M0 160 H1200 M0 120 H1200 M0 80 H1200"/>
+    <path d="M150 0 V300 M300 0 V300 M450 0 V300 M600 0 V300 M750 0 V300 M900 0 V300 M1050 0 V300"/>
+  </g>
+  <path d="M110 70 L72 160 H104 L88 232 L150 128 H116 L138 70 Z" fill="#facc15"/>
+  <text x="190" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800" fill="url(#t)">AG. AI TOKENS</text>
+  <text x="194" y="186" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#e5e7eb">Memoria, mappe e controllo per le tue AI — locali e gratuite.</text>
+  <text x="194" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#9ca3af">Bionic · LM Studio · Ollama · Claude · ChatGPT · Cursor · e molte altre</text>
+  <g font-family="Consolas, monospace" font-size="15">
+    <rect x="890" y="236" width="270" height="34" rx="17" fill="#16a34a" opacity="0.9"/>
+    <text x="912" y="258" fill="#ffffff">● dal vivo · niente tasti</text>
+  </g>
+</svg>
