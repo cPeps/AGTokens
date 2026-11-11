@@ -1,0 +1,50 @@
+name: "🐞 Segnala un bug"
+description: Qualcosa non funziona come dovrebbe
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Ogni segnalazione rende AGTokens migliore. ⚠️ Non scrivere dati personali (email, telefono, chiavi): questa pagina è pubblica.
+  - type: input
+    id: version
+    attributes:
+      label: Versione di AGTokens
+      description: È scritta in alto a sinistra nella finestra (es. 2.7.0)
+      placeholder: "2.7.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Con quale AI stavi lavorando?
+      multiple: true
+      options: [Bionic, LM Studio, Ollama, Jan, Unsloth Studio, Claude Desktop, Claude Code, ChatGPT, Cursor, Windsurf, Gemini, Altro]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Cosa è successo?
+      description: Descrivi il problema e cosa ti aspettavi che succedesse
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Come riprodurlo
+      placeholder: |
+        1. Ho trascinato la cartella…
+        2. Ho aperto Bionic…
+        3. …
+  - type: textarea
+    id: screen
+    attributes:
+      label: Schermata o messaggio di errore
+      description: Trascina qui uno screenshot della finestra di AGTokens o incolla il messaggio
+  - type: input
+    id: windows
+    attributes:
+      label: Versione di Windows
+      placeholder: "Windows 11"

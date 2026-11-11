@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 Domande e discussioni"
+    url: https://github.com/cPeps/AGTokens/discussions
+    about: Dubbi su come usare AGTokens, consigli, esperienze con le AI
+  - name: "⬇️ Scarica l'ultima versione"
+    url: https://github.com/cPeps/AGTokens/releases/latest
+    about: Il programma si scarica solo dalla pagina Releases

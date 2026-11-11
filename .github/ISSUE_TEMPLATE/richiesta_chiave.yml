@@ -1,0 +1,38 @@
+name: "🔑 Richiesta chiave di attivazione"
+description: Chiedi la tua chiave per usare AGTokens (oggi è gratuita)
+title: "[Chiave] "
+labels: ["richiesta chiave"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La chiave è **personale** e vale per **un solo PC**. Oggi è gratuita; in futuro potrebbe diventare seriale a pagamento oppure restare gratuita su richiesta.
+
+        ⚠️ **Questa pagina è pubblica**: non scrivere email, numeri di telefono o altri dati personali. Indica solo un nickname: la chiave ti verrà inviata **in privato**, mai qui.
+  - type: input
+    id: nick
+    attributes:
+      label: Nickname per contattarti in privato
+      description: Discord o Telegram (solo il nickname)
+      placeholder: "es. Discord: mario_dev"
+    validations:
+      required: true
+  - type: dropdown
+    id: community
+    attributes:
+      label: Fai parte della community Leone San Marco?
+      options: ["Sì", "No"]
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Per cosa userai AGTokens?
+      placeholder: "es. sviluppo del gioco con Godot e Bionic"
+  - type: checkboxes
+    id: ok
+    attributes:
+      label: Conferma
+      options:
+        - label: Ho capito che la chiave vale per un solo PC e non va condivisa
+          required: true
