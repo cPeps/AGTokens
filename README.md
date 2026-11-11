@@ -115,10 +115,11 @@ flowchart LR
 
 ## 🔑 Activation key
 
-AGTokens works with a **personal key** (one key = one PC).
+AGTokens **requires a personal activation key** to run (one key = one PC). Without a key the program does not start.
 
-- 🆓 **Keys are free today**: request one by opening a [**key request**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml).
-- 🔮 In the future keys may become **paid serial keys** or stay **free on request**: key holders will be notified directly inside the program window.
+- 🎟️ **Keys are given out on request, while supplies last**: only a **limited number of keys** is available.
+- 📝 **How to get one**: open a [**key request**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml) on the project forum. Requests are handled in order of arrival and the key is sent to you **privately**.
+- 🚫 **When keys run out**, no more keys are given until further notice: news is posted here and inside the program window.
 - ⏳ The window always shows your key status and the time left.
 
 > [!IMPORTANT]
@@ -128,7 +129,7 @@ AGTokens works with a **personal key** (one key = one PC).
 
 ## 🛡️ "Windows protected your PC"? Here's why
 
-`AGTokens.exe` **is not digitally signed**: a code‑signing certificate costs hundreds of euros per year and the project is free for now. That's why **Windows SmartScreen** may show a warning on first launch.
+`AGTokens.exe` **is not digitally signed**: a code‑signing certificate costs hundreds of euros per year and this is a community project. That's why **Windows SmartScreen** may show a warning on first launch.
 
 To run it: click **"More info" → "Run anyway"**.
 
@@ -173,7 +174,7 @@ This happens with unsigned single‑file programs. Download it only from Release
 
 <details>
 <summary><b>Is the source code available?</b></summary>
-No: AGTokens is proprietary software, free to use with a key. Here you'll find the program, the guide and the channel for reports and ideas.
+No: AGTokens is proprietary software and runs only with an activation key. Here you'll find the program, the guide and the channel for reports and ideas.
 </details>
 
 ---
@@ -184,7 +185,7 @@ Your feedback makes AGTokens better:
 
 - 🐞 [**Report a bug**](https://github.com/cPeps/AGTokens/issues/new?template=bug_report.yml)
 - 💡 [**Suggest an idea**](https://github.com/cPeps/AGTokens/issues/new?template=feature_request.yml)
-- 🔑 [**Request a key**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml)
+- 🔑 [**Request a key**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml) (limited availability)
 - 💬 [**Discussions & questions**](https://github.com/cPeps/AGTokens/discussions)
 
 ---
@@ -199,5 +200,5 @@ Your feedback makes AGTokens better:
 
 <p align="center">
   🦁 Made with passion for the <b>Leone San Marco</b> community and its game.<br>
-  <sub>© 2026 DevPeps — proprietary software, free to use. See <a href="LICENSE">LICENSE</a>.</sub>
+  <sub>© 2026 DevPeps — proprietary software, activation key required. See <a href="LICENSE">LICENSE</a>.</sub>
 </p>
