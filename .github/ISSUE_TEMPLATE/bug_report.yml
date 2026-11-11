@@ -1,50 +1,50 @@
-name: "🐞 Segnala un bug"
-description: Qualcosa non funziona come dovrebbe
+name: "🐞 Report a bug"
+description: Something doesn't work as it should
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Grazie! Ogni segnalazione rende AGTokens migliore. ⚠️ Non scrivere dati personali (email, telefono, chiavi): questa pagina è pubblica.
+        Thank you! Every report makes AGTokens better. ⚠️ Do not write personal data (email, phone, keys): this page is public.
   - type: input
     id: version
     attributes:
-      label: Versione di AGTokens
-      description: È scritta in alto a sinistra nella finestra (es. 2.7.0)
+      label: AGTokens version
+      description: Shown at the top left of the window (e.g. 2.7.0)
       placeholder: "2.7.0"
     validations:
       required: true
   - type: dropdown
     id: ai
     attributes:
-      label: Con quale AI stavi lavorando?
+      label: Which AI were you working with?
       multiple: true
-      options: [Bionic, LM Studio, Ollama, Jan, Unsloth Studio, Claude Desktop, Claude Code, ChatGPT, Cursor, Windsurf, Gemini, Altro]
+      options: [Bionic, LM Studio, Ollama, Jan, Unsloth Studio, Claude Desktop, Claude Code, ChatGPT, Cursor, Windsurf, Gemini, Other]
     validations:
       required: true
   - type: textarea
     id: what
     attributes:
-      label: Cosa è successo?
-      description: Descrivi il problema e cosa ti aspettavi che succedesse
+      label: What happened?
+      description: Describe the problem and what you expected to happen
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Come riprodurlo
+      label: How to reproduce
       placeholder: |
-        1. Ho trascinato la cartella…
-        2. Ho aperto Bionic…
+        1. I dragged the folder…
+        2. I opened Bionic…
         3. …
   - type: textarea
     id: screen
     attributes:
-      label: Schermata o messaggio di errore
-      description: Trascina qui uno screenshot della finestra di AGTokens o incolla il messaggio
+      label: Screenshot or error message
+      description: Drop a screenshot of the AGTokens window here or paste the message
   - type: input
     id: windows
     attributes:
-      label: Versione di Windows
+      label: Windows version
       placeholder: "Windows 11"

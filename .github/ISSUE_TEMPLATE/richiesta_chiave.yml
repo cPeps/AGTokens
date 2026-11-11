@@ -1,38 +1,38 @@
-name: "🔑 Richiesta chiave di attivazione"
-description: Chiedi la tua chiave per usare AGTokens (oggi è gratuita)
-title: "[Chiave] "
-labels: ["richiesta chiave"]
+name: "🔑 Activation key request"
+description: Ask for your key to use AGTokens (free today)
+title: "[Key] "
+labels: ["key request"]
 body:
   - type: markdown
     attributes:
       value: |
-        La chiave è **personale** e vale per **un solo PC**. Oggi è gratuita; in futuro potrebbe diventare seriale a pagamento oppure restare gratuita su richiesta.
+        The key is **personal** and works on **one PC only**. It is free today; in the future it may become a paid serial key or stay free on request.
 
-        ⚠️ **Questa pagina è pubblica**: non scrivere email, numeri di telefono o altri dati personali. Indica solo un nickname: la chiave ti verrà inviata **in privato**, mai qui.
+        ⚠️ **This page is public**: do not write emails, phone numbers or other personal data. Just leave a nickname: the key will be sent to you **privately**, never here.
   - type: input
     id: nick
     attributes:
-      label: Nickname per contattarti in privato
-      description: Discord o Telegram (solo il nickname)
-      placeholder: "es. Discord: mario_dev"
+      label: Nickname to contact you privately
+      description: Discord or Telegram (nickname only)
+      placeholder: "e.g. Discord: mario_dev"
     validations:
       required: true
   - type: dropdown
     id: community
     attributes:
-      label: Fai parte della community Leone San Marco?
-      options: ["Sì", "No"]
+      label: Are you part of the Leone San Marco community?
+      options: ["Yes", "No"]
     validations:
       required: true
   - type: textarea
     id: use
     attributes:
-      label: Per cosa userai AGTokens?
-      placeholder: "es. sviluppo del gioco con Godot e Bionic"
+      label: What will you use AGTokens for?
+      placeholder: "e.g. developing the game with Godot and Bionic"
   - type: checkboxes
     id: ok
     attributes:
-      label: Conferma
+      label: Confirmation
       options:
-        - label: Ho capito che la chiave vale per un solo PC e non va condivisa
+        - label: I understand the key works on one PC only and must not be shared
           required: true

@@ -1,23 +1,23 @@
-name: "💡 Proponi un'idea"
-description: Una funzione nuova o un miglioramento
+name: "💡 Suggest an idea"
+description: A new feature or an improvement
 title: "[Idea] "
 labels: ["idea"]
 body:
   - type: textarea
     id: idea
     attributes:
-      label: La tua idea
-      description: Cosa vorresti che AGTokens facesse?
+      label: Your idea
+      description: What would you like AGTokens to do?
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: Perché ti servirebbe?
-      description: Il problema che risolverebbe nel tuo lavoro con le AI
+      label: Why would you need it?
+      description: The problem it would solve in your work with AI
   - type: dropdown
     id: ai
     attributes:
-      label: Con quali AI la useresti?
+      label: Which AI would you use it with?
       multiple: true
-      options: [Bionic, LM Studio, Ollama, Claude, ChatGPT, Cursor, Altro]
+      options: [Bionic, LM Studio, Ollama, Claude, ChatGPT, Cursor, Other]
