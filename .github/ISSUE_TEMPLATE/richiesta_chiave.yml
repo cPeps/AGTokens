@@ -1,12 +1,12 @@
 name: "🔑 Activation key request"
-description: Ask for your key to use AGTokens (free today)
+description: Ask for your key to use AGTokens (limited number, while supplies last)
 title: "[Key] "
 labels: ["key request"]
 body:
   - type: markdown
     attributes:
       value: |
-        The key is **personal** and works on **one PC only**. It is free today; in the future it may become a paid serial key or stay free on request.
+        The key is **personal** and works on **one PC only**. Keys are given out **on request, while supplies last**: only a limited number is available and requests are handled in order of arrival.
 
         ⚠️ **This page is public**: do not write emails, phone numbers or other personal data. Just leave a nickname: the key will be sent to you **privately**, never here.
   - type: input
