@@ -3,204 +3,201 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/cPeps/AGTokens/releases/latest"><img src="https://img.shields.io/github/v/release/cPeps/AGTokens?label=versione&color=7c3aed&style=for-the-badge" alt="Versione"></a>
+  <a href="https://github.com/cPeps/AGTokens/releases/latest"><img src="https://img.shields.io/github/v/release/cPeps/AGTokens?label=version&color=7c3aed&style=for-the-badge" alt="Version"></a>
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows 10/11">
-  <img src="https://img.shields.io/badge/AI-locali%20e%20gratuite-16a34a?style=for-the-badge" alt="AI locali">
-  <img src="https://img.shields.io/badge/MCP-supportato-22d3ee?style=for-the-badge" alt="MCP">
-  <a href="https://github.com/cPeps/AGTokens/releases/latest"><img src="https://img.shields.io/github/downloads/cPeps/AGTokens/total?label=download&color=f59e0b&style=for-the-badge" alt="Download"></a>
+  <img src="https://img.shields.io/badge/AI-local%20%26%20free-16a34a?style=for-the-badge" alt="Local AI">
+  <img src="https://img.shields.io/badge/MCP-supported-22d3ee?style=for-the-badge" alt="MCP">
+  <a href="https://github.com/cPeps/AGTokens/releases/latest"><img src="https://img.shields.io/github/downloads/cPeps/AGTokens/total?label=downloads&color=f59e0b&style=for-the-badge" alt="Downloads"></a>
 </p>
 
 <p align="center">
-  <b>🦁 Creato per la community <i>Leone San Marco</i> e per il gioco che sta sviluppando.</b><br>
+  <b>🦁 Built for the <i>Leone San Marco</i> community and the game it is developing.</b><br>
   <sub>by DevPeps</sub>
 </p>
 
 ---
 
-## ⚡ In una frase
+## ⚡ In one sentence
 
-**AG. AI TOKENS** dà alla tua intelligenza artificiale **memoria del progetto, mappe del codice, controllo delle risposte e correzione automatica dei problemi**, così l'AI non dimentica, non inventa file e non spreca token. Trascini la cartella del progetto sull'icona e **non devi fare altro**: si aggiorna da solo, si vede tutto dal vivo, si riapre da solo quando apri la tua AI.
+**AG. AI TOKENS** gives your AI **project memory, code maps, answer verification and automatic fixes**, so it stops forgetting, stops inventing files and stops wasting tokens. Drop your project folder on the icon and **you're done**: it updates itself, shows everything live, and reopens by itself whenever you open your AI.
 
 <p align="center">
-  <img src="docs/ai-al-lavoro.png" alt="AGTokens mentre l'AI lavora" width="90%">
-  <br><sub>La finestra di AGTokens mentre Qwen 3.6 (in Bionic) legge il messaggio: tutto dal vivo, nessun tasto da premere.</sub>
+  <img src="docs/ai-al-lavoro.png" alt="AGTokens while the AI is working" width="90%">
+  <br><sub>AGTokens while Qwen 3.6 (running in Bionic) reads a message: everything live, no keys to press.</sub>
 </p>
 
 ---
 
-## 😤 Il problema che risolve
+## 😤 The problem it solves
 
-Chi lavora con le AI (soprattutto quelle **gratuite che girano sul PC**) conosce bene questi problemi:
+Anyone working with AI models (especially **free models running on your own PC**) knows these problems:
 
-| Problema | Cosa fa AGTokens |
+| Problem | What AGTokens does |
 |---|---|
-| 🧠 **L'AI dimentica** cosa avete deciso ieri | Memoria del progetto, stato del lavoro e lezioni sugli errori: ogni AI li ritrova a ogni sessione |
-| 🔍 **Rilegge tutto il progetto** e consuma migliaia di token | Mappe del codice e strumenti che leggono **solo le righe che servono** (su un progetto vero: **‑95% di token** a ogni nuova chat, misurati col tokenizer del modello) |
-| 🤥 **Inventa** file, righe, funzioni, "i test passano" | Ogni risposta viene **controllata contro il progetto vero** |
-| 💥 *«The selected model ran out of context space»* | AGTokens **ricarica da solo** il modello nel modo giusto (Bionic / LM Studio) |
-| ✂️ *«Unterminated string in JSON»*, risposte troncate | I file vengono scritti **a pezzi**, le risposte troncate vengono completate |
-| 🔁 L'AI va in **loop** o risponde **vuoto** | Loop fermati, risposte vuote dei modelli che "ragionano" recuperate da sole |
-| 📁 File **doppi**, copie `(1)`, file mancanti | **Verifica dei file** appena entri nel progetto: errori, doppioni, file mancanti |
+| 🧠 **The AI forgets** what you decided yesterday | Project memory, work state and lessons learned: every AI finds them again in every session |
+| 🔍 **It re-reads the whole project** and burns thousands of tokens | Code maps and tools that read **only the lines that matter** (on a real project: **‑95% tokens** per new chat, measured with the model's own tokenizer) |
+| 🤥 **It invents** files, lines, functions, "tests pass" | Every answer is **checked against the real project** |
+| 💥 *"The selected model ran out of context space"* | AGTokens **reloads the model the right way by itself** (Bionic / LM Studio) |
+| ✂️ *"Unterminated string in JSON"*, truncated answers | Files are written **in parts**, truncated answers are completed |
+| 🔁 The AI **loops** or answers **empty** | Loops are stopped, empty answers from "thinking" models are recovered |
+| 📁 **Duplicate** files, `(1)` copies, missing files | **File check** as soon as you open the project: errors, duplicates, missing files |
 
 ---
 
-## ✨ Funzioni principali
+## ✨ Key features
 
-- 🖥️ **Finestra unica, a colori, dal vivo**: cosa sta facendo l'AI *in questo istante* (legge il messaggio, scrive la risposta, token al secondo), quanto contesto usa, token letti e scritti, eventi spiegati in italiano. **Nessun tasto da premere.**
-- 🤖 **Vede tutto quello che fa il modello**: con Bionic e LM Studio legge il registro del modello, quindi conta anche la chat interna dell'app.
-- 🔧 **Sistema da solo il modello**: contesto diviso fra più richieste o troppo piccolo → lo ricarica quando è libero (mai a metà di una risposta).
-- 🧩 **Strumenti MCP** per le AI che li supportano: trova il codice, legge solo le righe utili, modifica con precisione (`agt_edit`), esegue i **test veri** (`agt_test`), controlla la sintassi dopo ogni modifica.
-- 🛡️ **Verifica delle risposte**: file inventati, righe sbagliate, funzioni che non esistono, codice "pigro" (`// ... resto invariato`).
-- 🔍 **Verifica dei file del progetto**: script con errori, file richiamati ma mancanti, doppioni, copie vecchie.
-- 🔁 **Si riapre da solo**: quando apri la tua AI, AGTokens si riapre sul progetto giusto.
-- 💾 **La memoria non si perde**: se cancelli per sbaglio i file di AGTokens, tornano con il loro contenuto.
-- 🎮 **Per chi fa giochi**: Unreal, Unity, Godot e **scene Blender** lette senza aprire i file binari.
-- 🔔 **Notifiche di Windows** per le cose importanti.
-- ⬆️ **Aggiornamenti automatici e firmati**: non devi scaricare niente due volte.
+- 🖥️ **One live, colorful window**: what the AI is doing *right now* (reading your message, writing the answer, tokens per second), how much context it uses, tokens read and written, every event explained. **No keys to press.**
+- 🤖 **Sees everything the model does**: with Bionic and LM Studio it reads the model's own log, so even the app's built‑in chat is counted.
+- 🔧 **Fixes the model by itself**: context split across parallel requests or too small → it reloads the model when idle (never in the middle of an answer).
+- 🧩 **MCP tools** for AIs that support them: find code, read only the useful lines, precise edits (`agt_edit`), run the **real tests** (`agt_test`), syntax check after every change.
+- 🛡️ **Answer verification**: invented files, wrong line numbers, functions that don't exist, "lazy" code (`// ... rest unchanged`).
+- 🔍 **Project file check**: scripts with errors, files referenced but missing, duplicates, old copies.
+- 🔁 **Reopens by itself**: when you open your AI, AGTokens reopens on the right project.
+- 💾 **Memory is never lost**: if you delete AGTokens' files by mistake, they come back with their content.
+- 🎮 **Made for game developers**: Unreal, Unity, Godot and **Blender scenes** read without opening binary files.
+- 🔔 **Windows notifications** for what matters.
+- ⬆️ **Automatic, signed updates**: you never download anything twice.
 
 <p align="center">
-  <img src="docs/finestra.png" alt="La finestra di AGTokens" width="90%">
-  <br><sub>Token letti e scritti dal modello, contesto usato, strumenti collegati, verifica dei file e memoria del progetto.</sub>
+  <img src="docs/finestra.png" alt="The AGTokens window" width="90%">
+  <br><sub>Tokens read and written by the model, context in use, connected tools, file check and project memory.</sub>
 </p>
 
 ---
 
-## 🤝 Funziona con
+## 🤝 Works with
 
-| Tipo | AI | Come si collega |
+| Type | AI | How it connects |
 |---|---|---|
-| 💻 **Sul tuo PC (gratis, offline)** | **Bionic**, LM Studio, Ollama, Jan, GPT4All, llama.cpp, vLLM, KoboldCpp, Unsloth Studio | Strumenti MCP + proxy locale + lettura del registro del modello |
-| 🧑‍💻 **Agenti** | Claude Code, Cursor, Windsurf, Cline, Gemini CLI, AnythingLLM | Strumenti MCP (configurati da soli) |
-| 💬 **Chat** | Claude Desktop, ChatGPT, Gemini, DeepSeek, Mistral, Grok… | MCP dove disponibile, altrimenti contesto pronto negli appunti + controllo automatico delle risposte copiate |
+| 💻 **On your PC (free, offline)** | **Bionic**, LM Studio, Ollama, Jan, GPT4All, llama.cpp, vLLM, KoboldCpp, Unsloth Studio | MCP tools + local proxy + reading the model's log |
+| 🧑‍💻 **Agents** | Claude Code, Cursor, Windsurf, Cline, Gemini CLI, AnythingLLM | MCP tools (configured automatically) |
+| 💬 **Chats** | Claude Desktop, ChatGPT, Gemini, DeepSeek, Mistral, Grok… | MCP where available, otherwise the project context is ready in your clipboard + automatic check of the answers you copy |
 
-AGTokens **riconosce quale AI stai usando** e adatta le regole ai suoi problemi noti (modelli piccoli, modelli che ragionano, chat senza accesso ai file…).
+AGTokens **recognizes which AI you are using** and adapts its rules to that AI's known weaknesses (small models, reasoning models, chats without file access…).
 
 ---
 
-## 🧭 Come funziona
+## 🧭 How it works
 
 ```mermaid
 flowchart LR
-    U([👤 Tu]) -- trascini la cartella --> A[⚡ AGTokens]
-    A -- legge il progetto --> M[(🗺️ Mappe · 🧠 Memoria<br/>🔍 Verifica file)]
-    AI[🤖 La tua AI<br/>Bionic · LM Studio · Claude · Cursor…] -- strumenti MCP --> A
-    A -- solo le righe utili --> AI
-    AI -- risposta --> V{🛡️ Controllo}
-    V -- inventato? --> W[⚠️ Te lo dice subito]
-    V -- tutto ok --> OK[✅ Memoria aggiornata]
-    L[(📜 Registro del modello)] -- token veri, contesto --> A
-    A -- contesto pieno? --> F[🔧 Ricarica il modello da solo]
+    U([👤 You]) -- drop the folder --> A[⚡ AGTokens]
+    A -- reads the project --> M[(🗺️ Maps · 🧠 Memory<br/>🔍 File check)]
+    AI[🤖 Your AI<br/>Bionic · LM Studio · Claude · Cursor…] -- MCP tools --> A
+    A -- only the useful lines --> AI
+    AI -- answer --> V{🛡️ Check}
+    V -- invented? --> W[⚠️ Tells you right away]
+    V -- all good --> OK[✅ Memory updated]
+    L[(📜 Model log)] -- real tokens, context --> A
+    A -- context full? --> F[🔧 Reloads the model by itself]
 ```
 
 ---
 
-## 🚀 Tutorial: da zero a pronto in 2 minuti
+## 🚀 Tutorial: from zero to ready in 2 minutes
 
-1. **Scarica** l'ultima versione dalla pagina [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.7.0.zip`.
-2. **Estrai** lo zip dove vuoi (per esempio sul Desktop).
-3. **Trascina la cartella del tuo progetto** sull'icona di `AGTokens.exe`.
-4. Al primo avvio incolla la tua **chiave di attivazione** (vedi sotto come ottenerla).
-5. **Fine.** Apri la tua AI (Bionic, LM Studio, Claude…) e lavora come sempre:
-   - le AI con gli strumenti MCP li ricevono **da sole**;
-   - per le chat web il contesto del progetto è **già negli appunti**: incollalo una volta all'inizio;
-   - la prossima volta che apri la tua AI, **AGTokens si riapre da solo**.
+1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.7.0.zip`.
+2. **Extract** the zip anywhere (for example on your Desktop).
+3. **Drag your project folder** onto `AGTokens.exe`.
+4. On first launch, paste your **activation key** (see below how to get one).
+5. **That's it.** Open your AI (Bionic, LM Studio, Claude…) and work as usual:
+   - AIs with MCP tools get them **automatically**;
+   - for web chats the project context is **already in your clipboard**: paste it once at the start;
+   - next time you open your AI, **AGTokens reopens by itself**.
 
 > [!TIP]
-> Con **Bionic / LM Studio** non serve configurare niente: AGTokens collega da solo gli strumenti, accende il server del modello se è spento e sistema il contesto se è caricato male.
+> With **Bionic / LM Studio** there is nothing to configure: AGTokens connects its tools, starts the model server if it is off, and fixes the context if the model was loaded badly.
+
+> [!NOTE]
+> The program interface is currently in **Italian**. Everything is automatic and the window is easy to read; an English interface is planned.
 
 ---
 
-## 🔑 Chiave di attivazione
+## 🔑 Activation key
 
-AGTokens funziona con una **chiave personale** (una chiave = un PC).
+AGTokens works with a **personal key** (one key = one PC).
 
-- 🆓 **Oggi la chiave è gratuita**: chiedila aprendo una [**richiesta di chiave**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml).
-- 🔮 In futuro le chiavi potrebbero diventare **seriali a pagamento** oppure restare **gratuite su richiesta**: chi ha già una chiave verrà avvisato direttamente nella finestra del programma.
-- ⏳ La finestra mostra sempre lo stato della chiave e il tempo che resta.
+- 🆓 **Keys are free today**: request one by opening a [**key request**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml).
+- 🔮 In the future keys may become **paid serial keys** or stay **free on request**: key holders will be notified directly inside the program window.
+- ⏳ The window always shows your key status and the time left.
 
 > [!IMPORTANT]
-> Non scrivere mai dati personali (email, telefono) nelle segnalazioni pubbliche: nel modulo indica solo un nickname (Discord/Telegram) con cui contattarti.
+> Never post personal data (email, phone) in public issues: just leave a nickname (Discord/Telegram) so you can be contacted privately.
 
 ---
 
-## 🛡️ «Windows ha protetto il PC»? Ecco perché
+## 🛡️ "Windows protected your PC"? Here's why
 
-`AGTokens.exe` **non ha la firma digitale di Windows**: un certificato di firma del codice costa centinaia di euro l'anno e per ora il progetto resta gratuito. Per questo **Windows SmartScreen** può mostrare un avviso al primo avvio.
+`AGTokens.exe` **is not digitally signed**: a code‑signing certificate costs hundreds of euros per year and the project is free for now. That's why **Windows SmartScreen** may show a warning on first launch.
 
-Per avviarlo: clicca **«Ulteriori informazioni» → «Esegui comunque»**.
+To run it: click **"More info" → "Run anyway"**.
 
-Per essere sicuro di avere il file originale:
-- scaricalo **solo** da questa pagina [Releases](https://github.com/cPeps/AGTokens/releases/latest);
-- confronta l'impronta SHA‑256 con quella pubblicata nel file `.sha256` della release:
+To make sure you have the original file:
+- download it **only** from this [Releases](https://github.com/cPeps/AGTokens/releases/latest) page;
+- compare the SHA‑256 fingerprint with the one in the release's `.sha256` file:
   ```powershell
   Get-FileHash .\AGTokens_v2.7.0.zip -Algorithm SHA256
   ```
-- AGTokens stesso verifica di essere una **copia originale**: una copia modificata viene bloccata.
+- AGTokens itself checks that it is an **original copy**: a modified copy is blocked.
 
 ---
 
 ## 🔒 Privacy
 
-- I tuoi progetti, il codice e le conversazioni con le AI **restano sul tuo PC**. Il proxy accetta **solo** modelli locali.
-- L'unico collegamento a internet è il **controllo della licenza**: al server vanno solo la chiave, un'impronta anonima del PC (non reversibile) e la versione del programma. Nessun file, nessun nome, nessun indirizzo IP salvato.
+- Your projects, your code and your conversations with the AI **stay on your PC**. The proxy accepts **local models only**.
+- The only internet connection is the **license check**: the server receives only the key, an anonymous PC fingerprint (not reversible) and the program version. No files, no names, no IP addresses stored.
 
 ---
 
-## ❓ Domande frequenti
+## ❓ FAQ
 
 <details>
-<summary><b>Devo premere dei tasti o configurare qualcosa?</b></summary>
-No. La finestra si legge e basta: tutto si aggiorna da solo. L'unica cosa da scrivere, solo se serve, è la chiave API di un modello protetto (es. Unsloth Studio): la riga si apre da sola.
+<summary><b>Do I need to press keys or configure anything?</b></summary>
+No. You just read the window: everything updates by itself. The only thing you may ever type is the API key of a protected model (e.g. Unsloth Studio), and the input line opens by itself.
 </details>
 
 <details>
-<summary><b>Funziona senza internet?</b></summary>
-Sì, con i modelli locali. La licenza resta valida anche senza connessione per il periodo stabilito dal titolare (di solito 24 ore), poi serve una connessione per il ricontrollo.
+<summary><b>Does it work offline?</b></summary>
+Yes, with local models. The license stays valid offline for the period set by the owner (usually 24 hours), then a connection is needed for the next check.
 </details>
 
 <details>
-<summary><b>Quanti token risparmio davvero?</b></summary>
-AGTokens lo misura col tokenizer del tuo modello: sul suo stesso codice (≈170.000 token) il contesto preparato da AGTokens è di ≈8.800 token, cioè <b>‑95% a ogni nuova chat</b>. Sui progetti molto piccoli il risparmio è minimo, e la finestra te lo dice onestamente.
+<summary><b>How many tokens do I really save?</b></summary>
+AGTokens measures it with your model's tokenizer: on its own code (≈170,000 tokens) the context it prepares is ≈8,800 tokens, i.e. <b>‑95% for every new chat</b>. On tiny projects the saving is small, and the window tells you so honestly.
 </details>
 
 <details>
-<summary><b>Il mio antivirus lo segnala.</b></summary>
-Succede ai programmi senza firma digitale compilati in un solo file. Scaricalo solo dalla pagina Releases e controlla l'impronta SHA‑256. Se vuoi, apri una <a href="https://github.com/cPeps/AGTokens/issues/new?template=bug_report.yml">segnalazione</a>.
+<summary><b>My antivirus flags it.</b></summary>
+This happens with unsigned single‑file programs. Download it only from Releases and verify the SHA‑256 fingerprint. Feel free to open a <a href="https://github.com/cPeps/AGTokens/issues/new?template=bug_report.yml">report</a>.
 </details>
 
 <details>
-<summary><b>Il codice sorgente è disponibile?</b></summary>
-No: AGTokens è software proprietario, gratuito da usare con una chiave. Qui trovi il programma, la guida e il canale per segnalazioni e idee.
+<summary><b>Is the source code available?</b></summary>
+No: AGTokens is proprietary software, free to use with a key. Here you'll find the program, the guide and the channel for reports and ideas.
 </details>
 
 ---
 
-## 🐞 Bug, idee e feedback
+## 🐞 Bugs, ideas and feedback
 
-Il tuo parere rende AGTokens migliore:
+Your feedback makes AGTokens better:
 
-- 🐞 [**Segnala un bug**](https://github.com/cPeps/AGTokens/issues/new?template=bug_report.yml)
-- 💡 [**Proponi un'idea**](https://github.com/cPeps/AGTokens/issues/new?template=feature_request.yml)
-- 🔑 [**Chiedi una chiave**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml)
-- 💬 [**Discussioni e domande**](https://github.com/cPeps/AGTokens/discussions)
-
----
-
-## 📋 Requisiti
-
-- Windows 10 o 11 (64 bit)
-- Una AI: consigliata **Bionic** o **LM Studio** con un modello locale (gratis); funzionano anche Claude, ChatGPT, Cursor e gli altri
-- Facoltativo: Blender (per leggere le scene `.blend`), Node.js (controllo più preciso dei file JavaScript)
+- 🐞 [**Report a bug**](https://github.com/cPeps/AGTokens/issues/new?template=bug_report.yml)
+- 💡 [**Suggest an idea**](https://github.com/cPeps/AGTokens/issues/new?template=feature_request.yml)
+- 🔑 [**Request a key**](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml)
+- 💬 [**Discussions & questions**](https://github.com/cPeps/AGTokens/discussions)
 
 ---
 
-## 🇬🇧 In English
+## 📋 Requirements
 
-**AG. AI TOKENS** gives your AI (especially free local models: Bionic, LM Studio, Ollama…) **project memory, code maps, answer verification and automatic fixes**: no more forgotten decisions, invented files, wasted tokens or *"ran out of context"* errors. Drop your project folder on the exe and you're done: a live, colorful window shows what the AI is doing, and AGTokens reopens by itself whenever you open your AI. Free to use with a personal key — [request one here](https://github.com/cPeps/AGTokens/issues/new?template=richiesta_chiave.yml). The interface is in Italian.
+- Windows 10 or 11 (64‑bit)
+- An AI: **Bionic** or **LM Studio** with a local model is recommended (free); Claude, ChatGPT, Cursor and others work too
+- Optional: Blender (to read `.blend` scenes), Node.js (more accurate JavaScript checks)
 
 ---
 
 <p align="center">
-  🦁 Fatto con passione per la community <b>Leone San Marco</b> e per il suo gioco.<br>
-  <sub>© 2026 DevPeps — software proprietario, gratuito da usare. Vedi <a href="LICENSE">LICENSE</a>.</sub>
+  🦁 Made with passion for the <b>Leone San Marco</b> community and its game.<br>
+  <sub>© 2026 DevPeps — proprietary software, free to use. See <a href="LICENSE">LICENSE</a>.</sub>
 </p>
