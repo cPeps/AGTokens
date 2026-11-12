@@ -46,7 +46,7 @@ These are the most common problems people report with AI coding assistants, loca
 | 🤥 **It invents** files, lines, functions, "tests pass" | Every answer is **checked against the real project** |
 | 💥 *"The selected model ran out of context space"* | AGTokens **reloads the model the right way by itself** (Bionic / LM Studio) |
 | ✂️ **Ollama silently cuts long prompts** (4K default context) | AGTokens detects it, warns you and tells you the exact fix |
-| 🔁 The AI **loops**: same tool call again and again | The loop is detected and the AI is told to change approach |
+| 🔁 The AI **loops**: same tool call again and again (seen live: 137× the same `create_folder` in Bionic) | Detected in AGTokens' tools **and in the Bionic chat**: warning at 3, the model is **stopped automatically** at 6 |
 | 🤐 "Thinking" models (Qwen3, DeepSeek‑R1…) **answer empty** | The answer is recovered automatically (more room, then reasoning off) |
 | 🧩 Small models write tool calls **as plain text** / broken JSON | Tool calls and JSON are repaired |
 | 📁 **Duplicate** files, `(1)` copies, missing files | **File check** as soon as you open the project |
@@ -65,6 +65,7 @@ These are the most common problems people report with AI coding assistants, loca
 - 🔍 **Project file check**: scripts with errors, files referenced but missing, duplicates, old copies.
 - 🔁 **Reopens by itself** when you open your AI, on the right project.
 - 💾 **Memory is never lost**: if you delete AGTokens' files by mistake, they come back with their content.
+- 🔁 **Stops loops in the Bionic chat too**: AGTokens reads the chat (read-only), warns after 3 identical actions in a row and **stops the model by itself after 6**.
 - 🎮 **Made for game developers**: Unreal, Unity, Godot and **Blender scenes** read without opening binary files.
 - 🌐 **English or Italian**: click **🌐** at the top right (or press **L**) to switch at any time.
 - 🔔 **Windows notifications** for what matters · ⬆️ **automatic, signed updates**.
@@ -124,7 +125,7 @@ flowchart LR
 
 ## 🚀 Tutorial: from zero to ready in 2 minutes
 
-1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.7.2.zip`.
+1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.7.3.zip`.
 2. **Extract** the zip anywhere (for example on your Desktop).
 3. **Drag your project folder** onto `AGTokens.exe`.
 4. On first launch **choose your language** (🇬🇧 English / 🇮🇹 Italiano) and paste your **activation key** ([how to get one](#-activation-keys-free-limited)).
@@ -174,7 +175,7 @@ Each key works for a **limited period of time**. The window always shows how muc
 
 ## ⚖️ Legal
 
-By using AGTokens you accept the **[Terms of Use (EULA)](legal/EULA_en.md)** and the **[Privacy Notice](legal/PRIVACY_en.md)**. On first launch the program shows them and asks you to type **I ACCEPT** twice (terms + specific approval of the limiting clauses); a receipt and a copy of the texts stay on your PC. The **Italian texts are authoritative**: [Condizioni d'uso](legal/EULA_it.md) · [Informativa privacy](legal/PRIVACY_it.md).
+By using AGTokens you accept the **[Terms of Use (EULA)](legal/EULA_en.md)** and the **[Privacy Notice](legal/PRIVACY_en.md)**. You accept them **simply by using the program**: nothing to type. On first launch (and whenever the texts change) the window shows a clear notice with a summary and where to read them in full; a receipt and a copy of the texts stay on your PC. The **Italian texts are authoritative**: [Condizioni d'uso](legal/EULA_it.md) · [Informativa privacy](legal/PRIVACY_it.md).
 
 In short:
 - AGTokens is **free** and **proprietary**, provided **"as is"**, without warranties. The licensor is not liable for damages except where the law does not allow excluding it (wilful misconduct or gross negligence).
@@ -195,7 +196,7 @@ To make sure you have the original file:
 - download it **only** from this [Releases](https://github.com/cPeps/AGTokens/releases/latest) page;
 - compare the SHA‑256 fingerprint with the one in the release's `.sha256` file:
   ```powershell
-  Get-FileHash .\AGTokens_v2.7.2.zip -Algorithm SHA256
+  Get-FileHash .\AGTokens_v2.7.3.zip -Algorithm SHA256
   ```
 - AGTokens itself checks that it is an **original copy**: a modified copy is blocked.
 
