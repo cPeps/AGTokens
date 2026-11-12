@@ -44,5 +44,5 @@ body:
       options:
         - label: I understand the key is free but limited in number and in time, works on one PC only and must not be shared
           required: true
-        - label: I have read the [Terms of Use](https://github.com/cPeps/AGTokens/blob/main/legal/EULA_en.md) and the [Privacy Notice](https://github.com/cPeps/AGTokens/blob/main/legal/PRIVACY_en.md) (I will accept them in the program)
+        - label: I have read the [Terms of Use](https://github.com/cPeps/AGTokens/blob/main/legal/EULA_en.md) and the [Privacy Notice](https://github.com/cPeps/AGTokens/blob/main/legal/PRIVACY_en.md) (by using the program I accept them)
           required: true
