@@ -1,12 +1,14 @@
-name: "🔑 Activation key request"
-description: Ask for your key to use AGTokens (limited number, while supplies last)
+name: "🔑 Activation key request (free, limited)"
+description: Ask for your free key to use AGTokens (limited number, limited time of use)
 title: "[Key] "
 labels: ["key request"]
 body:
   - type: markdown
     attributes:
       value: |
-        The key is **personal** and works on **one PC only**. Keys are given out **on request, while supplies last**: only a limited number is available and requests are handled in order of arrival.
+        🎟️ **Free of charge** · 📉 **limited number of keys** (in order of arrival, while supplies last) · ⏳ **limited time of use** (the window shows the time left and warns you before it expires).
+
+        The key is **personal** and works on **one PC only**.
 
         ⚠️ **This page is public**: do not write emails, phone numbers or other personal data. Just leave a nickname: the key will be sent to you **privately**, never here.
   - type: input
@@ -24,6 +26,12 @@ body:
       options: ["Yes", "No"]
     validations:
       required: true
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Which AI will you use with AGTokens?
+      multiple: true
+      options: [Bionic, LM Studio, Ollama, Unsloth Studio, Claude, ChatGPT, Cursor, Other]
   - type: textarea
     id: use
     attributes:
@@ -34,5 +42,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I understand the key works on one PC only and must not be shared
+        - label: I understand the key is free but limited in number and in time, works on one PC only and must not be shared
+          required: true
+        - label: I have read the [Terms of Use](https://github.com/cPeps/AGTokens/blob/main/legal/EULA_en.md) and the [Privacy Notice](https://github.com/cPeps/AGTokens/blob/main/legal/PRIVACY_en.md) (I will accept them in the program)
           required: true
