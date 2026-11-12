@@ -29,8 +29,8 @@
 - 🧾 People who use **paid AIs** (Claude, ChatGPT, Cursor) and hit **usage limits** too fast: fewer tokens per task means more work before the limit.
 
 <p align="center">
-  <img src="docs/ai-al-lavoro.png" alt="AGTokens while the AI is working" width="90%">
-  <br><sub>AGTokens while Qwen 3.6 (running in Bionic) reads a message: everything live, no keys to press.</sub>
+  <img src="docs/ai-working.png" alt="AGTokens while the AI is working" width="90%">
+  <br><sub>The real AGTokens window while an AI uses its tools and a local model answers through it: everything live, no keys to press.</sub>
 </p>
 
 ---
@@ -65,13 +65,14 @@ These are the most common problems people report with AI coding assistants, loca
 - 🔍 **Project file check**: scripts with errors, files referenced but missing, duplicates, old copies.
 - 🔁 **Reopens by itself** when you open your AI, on the right project.
 - 💾 **Memory is never lost**: if you delete AGTokens' files by mistake, they come back with their content.
+- 🗂️ **Your files are safe**: before an AI changes an existing file through AGTokens' tools, a safety copy is kept in `_ai_context/_backup/` (last 5 per file). Windows line endings are preserved; AGTokens' internal files and `.git` cannot be overwritten.
 - 🔁 **Stops loops in the Bionic chat too**: AGTokens reads the chat (read-only), warns after 3 identical actions in a row and **stops the model by itself after 6**.
 - 🎮 **Made for game developers**: Unreal, Unity, Godot and **Blender scenes** read without opening binary files.
 - 🌐 **English or Italian**: click **🌐** at the top right (or press **L**) to switch at any time.
 - 🔔 **Windows notifications** for what matters · ⬆️ **automatic, signed updates**.
 
 <p align="center">
-  <img src="docs/finestra.png" alt="The AGTokens window" width="90%">
+  <img src="docs/window.png" alt="The AGTokens window" width="90%">
   <br><sub>Tokens used and saved, context in use, connected tools, file check and project memory.</sub>
 </p>
 
@@ -86,10 +87,13 @@ AGTokens never shows a number it cannot back up. In the **🪙 Tokens** box:
 | **Used** | Tokens the model really read | **Real** — counted by the model itself (log of Bionic/LM Studio or the model's API) |
 | **Written** | Tokens of the answers | **Real** |
 | **Without AGTokens** | What the model would have had to read without AGTokens | Used + Saved |
-| **Saved** | Tokens avoided by targeted reads, compact context and compressed history, minus what AGTokens adds | **Estimate** (marked with ≈) |
+| **Saved** | Tokens avoided by targeted reads, compact context and compressed history, minus what AGTokens adds. A targeted read is worth at most the difference with reading that file **once**, and the saving goes down if the AI re-reads the same file. The context for web chats counts only when it was **really pasted** (an answer came back), not just copied | **Estimate** (marked with ≈) |
 | **New chat** | Whole project vs AGTokens context, counted by **your model's tokenizer** | **Measured** |
 
 Each request is counted **once**, even when it passes through both the proxy and the model's log, and retries are included, because they really cost tokens.
+
+> [!NOTE]
+> **2.8.0 — "no lies" release.** Every feature was re‑tested from the outside against reality (177 independent checks with a detailed log, also with a real model). Savings that were over‑counted are now counted honestly, the answer checker no longer accuses honest answers, and the AI is never told something false about your project.
 
 ---
 
@@ -125,7 +129,7 @@ flowchart LR
 
 ## 🚀 Tutorial: from zero to ready in 2 minutes
 
-1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.7.3.zip`.
+1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.8.0.zip`.
 2. **Extract** the zip anywhere (for example on your Desktop).
 3. **Drag your project folder** onto `AGTokens.exe`.
 4. On first launch **choose your language** (🇬🇧 English / 🇮🇹 Italiano) and paste your **activation key** ([how to get one](#-activation-keys-free-limited)).
@@ -167,7 +171,7 @@ Each key works for a **limited period of time**. The window always shows how muc
 - Your projects, your code and your conversations with the AI **stay on your PC**. The proxy accepts **local models only**.
 - The local proxy answers **only programs on your PC**: requests from web pages (including "DNS rebinding" tricks) are refused.
 - The AI tools cannot read or write **outside your project**.
-- The only internet connection is the **license check**: the server receives only the key, an anonymous PC fingerprint (not reversible) and the program version. No files, no names, no IP addresses stored.
+- The only internet connection is the **license check**: the server receives only the key, an anonymous PC fingerprint (not reversible), the program version, the fingerprint of the program file (to recognize modified copies) and the proof that you accepted the Terms (version and fingerprint of the texts, date). No files, no names, no IP addresses stored.
 - License answers and updates are **digitally signed** by the server (Ed25519): a fake server or a modified update is rejected.
 - Found a vulnerability? Please report it **privately**: see [SECURITY.md](SECURITY.md).
 
@@ -196,7 +200,7 @@ To make sure you have the original file:
 - download it **only** from this [Releases](https://github.com/cPeps/AGTokens/releases/latest) page;
 - compare the SHA‑256 fingerprint with the one in the release's `.sha256` file:
   ```powershell
-  Get-FileHash .\AGTokens_v2.7.3.zip -Algorithm SHA256
+  Get-FileHash .\AGTokens_v2.8.0.zip -Algorithm SHA256
   ```
 - AGTokens itself checks that it is an **original copy**: a modified copy is blocked.
 
@@ -206,7 +210,7 @@ To make sure you have the original file:
 
 <details>
 <summary><b>Do I need to press keys or configure anything?</b></summary>
-No. You just read the window: everything updates by itself. Optional: click 🌐 (or press L) to change language. The only thing you may ever type is the API key of a protected model (e.g. Unsloth Studio), and the input line opens by itself.
+No. You just read the window: everything updates by itself. Optional: click 🌐 (or press L) to change language; press P to put the project context back in the clipboard when you open a new web chat. The only thing you may ever type is the API key of a protected model (e.g. Unsloth Studio), and the input line opens by itself.
 </details>
 
 <details>
