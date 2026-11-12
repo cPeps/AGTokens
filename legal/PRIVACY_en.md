@@ -1,6 +1,6 @@
 # AG. AI TOKENS — Privacy Notice
 
-**Version 1.0 — effective 12 November 2026** · under arts. 13 and 14 of Regulation (EU) 2016/679 ("GDPR"). The Italian text is the authoritative version.
+**Version 1.1 — effective 12 November 2026** · under arts. 13 and 14 of Regulation (EU) 2016/679 ("GDPR"). The Italian text is the authoritative version.
 
 ## 1. Data controller
 DevPeps, author of AG. AI TOKENS. Contact: the project page https://github.com/cPeps/AGTokens (Issues) or the Security section for confidential requests.
@@ -13,7 +13,7 @@ To check the license the Program sends to the controller's server **only**:
 - the **activation key**;
 - an **anonymous PC fingerprint** (SHA-256 code computed from technical PC data; it contains no names, users, files or addresses);
 - the Program **version** and the fingerprint of the Program file (to recognise modified copies);
-- the **version of the Terms and Privacy Notice accepted** and the date of acceptance.
+- the **version of the Terms and Privacy Notice accepted by use** and the date.
 The server also records the date of the first and last check. It **does not record IP addresses**, names, emails or contents.
 Although pseudonymous, this data may be considered personal data, so it is processed according to the GDPR.
 

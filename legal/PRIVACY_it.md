@@ -1,6 +1,6 @@
 # AG. AI TOKENS — Informativa privacy
 
-**Versione 1.0 — in vigore dal 12/11/2026** · ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 ("GDPR")
+**Versione 1.1 — in vigore dal 12/11/2026** · ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 ("GDPR")
 
 ## 1. Titolare del trattamento
 DevPeps, autore di AG. AI TOKENS. Contatti: pagina del progetto https://github.com/cPeps/AGTokens (sezione Issues) o la sezione Security per richieste riservate.
@@ -13,7 +13,7 @@ Per verificare la licenza il Programma invia al server del Titolare **solo**:
 - la **chiave di attivazione**;
 - un'**impronta anonima del PC** (codice SHA-256 calcolato dai dati tecnici del PC; non contiene nomi, utenti, file o indirizzi);
 - la **versione** del Programma e l'impronta del file del Programma (per riconoscere le copie modificate);
-- la **versione delle Condizioni e dell'Informativa accettate** e la data di accettazione.
+- la **versione delle Condizioni e dell'Informativa accettate con l'uso** e la data.
 Il server registra inoltre la data del primo e dell'ultimo controllo. **Non registra indirizzi IP**, nomi, email o contenuti.
 Anche se pseudonimi, questi dati possono essere considerati dati personali: per questo sono trattati secondo il GDPR.
 

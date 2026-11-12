@@ -1,10 +1,10 @@
 # AG. AI TOKENS — Condizioni d'uso e Licenza (EULA)
 
-**Versione 1.0 — in vigore dal 12/11/2026**
+**Versione 1.1 — in vigore dal 12/11/2026**
 
 Il presente contratto ("Condizioni") regola l'uso del programma AG. AI TOKENS ("AGTokens" o il "Programma") tra **DevPeps**, autore e titolare dei diritti sul Programma (il "Titolare"), e la persona che lo installa o lo usa (l'"Utente"). Il testo in lingua italiana è quello che fa fede; la versione inglese è una traduzione di cortesia.
 
-Usando il Programma, oppure scrivendo «ACCETTO» nella schermata di accettazione, l'Utente dichiara di aver letto e di accettare le presenti Condizioni e l'Informativa privacy. Se non le accetta, non deve installare né usare il Programma.
+**Usando il Programma l'Utente accetta le presenti Condizioni e l'Informativa privacy**, che il Programma mostra al primo avvio (e a ogni nuova versione) insieme al loro riassunto e a dove leggerle per intero. Se non le accetta, non deve installare né usare il Programma e deve cancellarlo.
 
 ## 1. Oggetto e natura gratuita
 1.1 Il Titolare concede all'Utente una licenza d'uso **personale, gratuita, non esclusiva, non trasferibile, non sublicenziabile e revocabile** del Programma, in forma di solo codice eseguibile.
@@ -76,5 +76,5 @@ L'Utente dichiara di avere almeno 18 anni oppure di usare il Programma con il co
 15.2 Nulla nelle presenti Condizioni limita i diritti che la legge riconosce in modo inderogabile ai consumatori.
 15.3 Contatti: tramite la pagina del progetto https://github.com/cPeps/AGTokens (segnalazioni) o la sezione Security per le vulnerabilità.
 
-## Approvazione specifica (artt. 1341 e 1342 c.c.)
-Ai sensi e per gli effetti degli artt. 1341 e 1342 del codice civile, l'Utente dichiara di aver letto e di approvare specificamente le seguenti clausole: **2.4** (revoca e sospensione delle chiavi senza indennizzo); **3** (limiti d'uso); **4** (operazioni sul PC dell'Utente); **5** (responsabilità dell'Utente per i contenuti e per le AI); **6** (modifica e interruzione del servizio); **7** (esclusione di garanzie); **8** (limitazione di responsabilità); **9** (esclusione di responsabilità di soggetti terzi); **10** (manleva); **13** (risoluzione e modifiche); **14.2** (foro competente).
+## Clausole di particolare importanza (artt. 1341 e 1342 c.c.)
+Si richiama in modo particolare l'attenzione dell'Utente sulle seguenti clausole, che l'Utente dichiara di aver letto e di accettare usando il Programma: **2.4** (revoca e sospensione delle chiavi senza indennizzo); **3** (limiti d'uso); **4** (operazioni sul PC dell'Utente); **5** (responsabilità dell'Utente per i contenuti e per le AI); **6** (modifica e interruzione del servizio); **7** (esclusione di garanzie); **8** (limitazione di responsabilità); **9** (esclusione di responsabilità di soggetti terzi); **10** (manleva); **13** (risoluzione e modifiche); **14.2** (foro competente).

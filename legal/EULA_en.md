@@ -1,10 +1,10 @@
 # AG. AI TOKENS — Terms of Use and License (EULA)
 
-**Version 1.0 — effective 12 November 2026**
+**Version 1.1 — effective 12 November 2026**
 
 This agreement ("Terms") governs the use of AG. AI TOKENS ("AGTokens" or the "Program") between **DevPeps**, author and rights holder of the Program (the "Licensor"), and the person who installs or uses it (the "User"). The **Italian text is the authoritative version**; this English text is a courtesy translation.
 
-By using the Program, or by typing "I ACCEPT" on the acceptance screen, the User declares to have read and to accept these Terms and the Privacy Notice. If you do not accept them, do not install or use the Program.
+**By using the Program the User accepts these Terms and the Privacy Notice**, which the Program shows on first launch (and with every new version) together with their summary and where to read them in full. If you do not accept them, do not install or use the Program and delete it.
 
 ## 1. Subject and free of charge
 1.1 The Licensor grants the User a **personal, free, non-exclusive, non-transferable, non-sublicensable and revocable** license to use the Program in executable form only.
@@ -76,5 +76,5 @@ The User declares to be at least 18 years old or to use the Program with the con
 15.2 Nothing in these Terms limits rights that the law mandatorily grants to consumers.
 15.3 Contact: through the project page https://github.com/cPeps/AGTokens (issues) or the Security section for vulnerabilities.
 
-## Specific approval (arts. 1341 and 1342 Italian Civil Code)
-Pursuant to arts. 1341 and 1342 of the Italian Civil Code, the User declares to have read and to specifically approve the following clauses: **2.4** (revocation and suspension of keys without compensation); **3** (restrictions); **4** (operations on the User's PC); **5** (User responsibility for content and AIs); **6** (change and discontinuation of the service); **7** (no warranty); **8** (limitation of liability); **9** (exclusion of liability of third parties); **10** (indemnity); **13** (termination and changes); **14.2** (jurisdiction).
+## Clauses of particular importance (arts. 1341 and 1342 Italian Civil Code)
+The User's attention is drawn in particular to the following clauses, which the User declares to have read and accepts by using the Program: **2.4** (revocation and suspension of keys without compensation); **3** (restrictions); **4** (operations on the User's PC); **5** (User responsibility for content and AIs); **6** (change and discontinuation of the service); **7** (no warranty); **8** (limitation of liability); **9** (exclusion of liability of third parties); **10** (indemnity); **13** (termination and changes); **14.2** (jurisdiction).
