@@ -56,7 +56,8 @@ These are the most common problems people report with AI coding assistants, loca
 
 ## ✨ Key features
 
-- 🖥️ **One live, colorful window**: what the AI is doing *right now* (reading your message, writing the answer, tokens per second, last tool used), context in use, every event explained. **No keys to press.**
+- 🖥️ **One live, colorful window**: what the AI is doing *right now* (reading your message, writing the answer, tokens per second, last tool used), context in use, every event explained. **No keys to press.** The **AI IS WORKING** badge lights up with any AI: local models, Claude, agents using the tools.
+- 🤝 **Claude Code without pasting anything** (also in the Claude app, agent mode): through Claude Code's official hooks AGTokens gives Claude the project memory at every new session and after `/compact` / `/clear`, reads Claude's real token usage and tells you when the session has become heavy.
 - 📊 **Honest token numbers**: tokens really used, how many **without AGTokens**, how many **saved**, and the **measured** saving per new chat (see below).
 - 🤖 **Sees everything the model does**: with Bionic and LM Studio it reads the model's own log, so even the app's built‑in chat is counted (never twice).
 - 🔧 **Fixes the model by itself**: context split across parallel requests or too small → it reloads the model when idle (never in the middle of an answer).
@@ -93,6 +94,8 @@ AGTokens never shows a number it cannot back up. In the **🪙 Tokens** box:
 Each request is counted **once**, even when it passes through both the proxy and the model's log, and retries are included, because they really cost tokens.
 
 > [!NOTE]
+> **2.9.0 — Claude and web chats.** The context to paste is now 6× smaller (≈1,200 tokens instead of up to 8,000, which were re-read on every message). With Claude Code (also inside the Claude app) there is nothing to paste: AGTokens hands over the project memory by itself at every new session and after `/compact` or `/clear`, shows Claude's **real** tokens, and warns when a session gets heavy or when a model switch re-reads everything.
+>
 > **2.8.0 — "no lies" release.** Every feature was re‑tested from the outside against reality (177 independent checks with a detailed log, also with a real model). Savings that were over‑counted are now counted honestly, the answer checker no longer accuses honest answers, and the AI is never told something false about your project.
 
 ---
@@ -102,7 +105,7 @@ Each request is counted **once**, even when it passes through both the proxy and
 | Type | AI | How it connects |
 |---|---|---|
 | 💻 **On your PC (free, offline)** | **Bionic**, LM Studio, Ollama, Jan, GPT4All, llama.cpp, vLLM, KoboldCpp, Unsloth Studio | MCP tools + local proxy + reading the model's log |
-| 🧑‍💻 **Agents** | Claude Code, Cursor, Windsurf, Cline, AnythingLLM | MCP tools (configured automatically) |
+| 🧑‍💻 **Agents** | Claude Code, Cursor, Windsurf, Cline, AnythingLLM | MCP tools (configured automatically); Claude Code also through its official hooks (memory delivered by itself, real tokens shown) |
 | ⌨️ **Free terminal AIs** | **OpenCode** (tested end‑to‑end), Kilo Code CLI, Crush, Qwen Code, Antigravity CLI / Gemini CLI, Codex CLI | MCP tools (configured automatically, each in its own format) |
 | 💬 **Chats** | Claude Desktop, ChatGPT, Gemini, DeepSeek, Mistral, Grok… | MCP where available, otherwise the project context is ready in your clipboard + automatic check of the answers you copy |
 
@@ -129,13 +132,13 @@ flowchart LR
 
 ## 🚀 Tutorial: from zero to ready in 2 minutes
 
-1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.8.0.zip`.
+1. **Download** the latest version from [**Releases**](https://github.com/cPeps/AGTokens/releases/latest) → `AGTokens_v2.9.0.zip`.
 2. **Extract** the zip anywhere (for example on your Desktop).
 3. **Drag your project folder** onto `AGTokens.exe`.
 4. On first launch **choose your language** (🇬🇧 English / 🇮🇹 Italiano) and paste your **activation key** ([how to get one](#-activation-keys-free-limited)).
 5. **That's it.** Open your AI (Bionic, LM Studio, Claude…) and work as usual:
    - AIs with MCP tools get them **automatically**;
-   - for web chats the project context is **already in your clipboard**: paste it once at the start;
+   - for web chats a **small** project context (≈1,200 tokens) is **already in your clipboard**: paste it once at the start;
    - next time you open your AI, **AGTokens reopens by itself**.
 
 > [!TIP]
@@ -200,7 +203,7 @@ To make sure you have the original file:
 - download it **only** from this [Releases](https://github.com/cPeps/AGTokens/releases/latest) page;
 - compare the SHA‑256 fingerprint with the one in the release's `.sha256` file:
   ```powershell
-  Get-FileHash .\AGTokens_v2.8.0.zip -Algorithm SHA256
+  Get-FileHash .\AGTokens_v2.9.0.zip -Algorithm SHA256
   ```
 - AGTokens itself checks that it is an **original copy**: a modified copy is blocked.
 
@@ -225,7 +228,7 @@ AGTokens measures it with your model's tokenizer: on its own code (≈170,000 to
 
 <details>
 <summary><b>Does it help with Claude / ChatGPT / Cursor usage limits?</b></summary>
-Yes: their agents read only the lines they need through AGTokens' tools instead of whole files, tool outputs are capped, and new chats start from a compact context instead of the whole project.
+Yes, in the ways that are really possible. Paid AIs re-send the whole conversation on every message, and no external program can shorten that. What AGTokens does: it makes starting over cheap (project memory handed over by itself, a small context to paste), their agents can read only the lines they need through AGTokens' tools, and the window warns you when a session has become heavy (<code>/compact</code>) or when you switch model in an open conversation (the new model re-reads everything: use <code>/clear</code> first, the memory comes back by itself).
 </details>
 
 <details>
